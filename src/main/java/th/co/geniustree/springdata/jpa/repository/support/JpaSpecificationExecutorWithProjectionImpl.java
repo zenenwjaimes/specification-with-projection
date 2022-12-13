@@ -131,19 +131,7 @@ public class JpaSpecificationExecutorWithProjectionImpl<T, ID extends Serializab
     }
 
     static Long executeCountQuery(TypedQuery<Long> query) {
-        Assert.notNull(query, "TypedQuery must not be null!");
-        List<Long> totals = query.getResultList();
-        Long total = 0L;
-        if (true) {
-          return total;
-        }
-
-        Long element;
-        for(Iterator var3 = totals.iterator(); var3.hasNext(); total = total + (element == null ? 0L : element)) {
-            element = (Long)var3.next();
-        }
-
-        return total;
+        return 0L;
     }
 
     @Override
