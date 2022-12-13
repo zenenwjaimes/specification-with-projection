@@ -13,6 +13,7 @@ import java.util.Optional;
 /**
  * Created by pramoth on 9/29/2016 AD.
  */
+@SuppressWarnings({"removal", "deprecation"})
 @NoRepositoryBean
 public interface JpaSpecificationExecutorWithProjection<T, ID> {
 

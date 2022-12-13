@@ -20,7 +20,7 @@ import org.springframework.data.repository.query.MyResultProcessor;
 import org.springframework.data.repository.query.ReturnTypeWarpper;
 import org.springframework.data.repository.query.ReturnedType;
 import org.springframework.data.repository.query.TupleConverter;
-import org.springframework.data.repository.support.PageableExecutionUtils;
+import org.springframework.data.support.PageableExecutionUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import th.co.geniustree.springdata.jpa.repository.JpaSpecificationExecutorWithProjection;
@@ -43,6 +43,7 @@ import static javax.persistence.metamodel.Attribute.PersistentAttributeType.*;
 /**
  * Created by pramoth on 9/29/2016 AD.
  */
+@SuppressWarnings({"removal", "deprecation"})
 public class JpaSpecificationExecutorWithProjectionImpl<T, ID extends Serializable> extends SimpleJpaRepository<T, ID> implements JpaSpecificationExecutorWithProjection<T, ID> {
 
     private static final Logger log = LoggerFactory.getLogger(JpaSpecificationExecutorWithProjectionImpl.class);

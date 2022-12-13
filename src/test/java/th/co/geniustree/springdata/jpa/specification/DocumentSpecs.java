@@ -8,6 +8,6 @@ import th.co.geniustree.springdata.jpa.domain.Document;
  */
 public class DocumentSpecs {
     public static Specification<Document> idEq(Long id){
-        return (root, query, cb) -> cb.equal(root.get(Document.id),id);
+        return null;
     }
 }
