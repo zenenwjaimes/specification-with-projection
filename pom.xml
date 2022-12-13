@@ -9,7 +9,7 @@
 
     <name>specification-projection</name>
     <description>Support specification with projection for Spring Data JPA</description>
-    <url>https://github.com/pramoth/specification-with-projection</url>
+    <url>https://github.com/zenenwjaimes/specification-with-projection</url>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
