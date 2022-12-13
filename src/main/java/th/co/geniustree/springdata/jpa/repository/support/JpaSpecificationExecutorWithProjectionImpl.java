@@ -134,6 +134,9 @@ public class JpaSpecificationExecutorWithProjectionImpl<T, ID extends Serializab
         Assert.notNull(query, "TypedQuery must not be null!");
         List<Long> totals = query.getResultList();
         Long total = 0L;
+        if (true) {
+          return total;
+        }
 
         Long element;
         for(Iterator var3 = totals.iterator(); var3.hasNext(); total = total + (element == null ? 0L : element)) {
