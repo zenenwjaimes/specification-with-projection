@@ -38,9 +38,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:pramoth/specification-with-projection.git</connection>
-        <developerConnection>scm:git:git@github.com:pramoth/specification-with-projection.git</developerConnection>
-        <url>https://github.com/pramoth/specification-with-projection</url>
+        <connection>scm:git:git@github.com:zenenwjaimes/specification-with-projection.git</connection>
+        <developerConnection>scm:git:git@github.com:zenenwjaimes/specification-with-projection.git</developerConnection>
+        <url>https://github.com/zenenwjaimes/specification-with-projection</url>
         <tag>HEAD</tag>
     </scm>
     <dependencies>
