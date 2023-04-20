@@ -200,9 +200,11 @@ public class JpaSpecificationExecutorWithProjectionImpl<T, ID extends Serializab
     private <S> TypedQuery<S> applyRepositoryMethodMetadata(TypedQuery<S> query) {
 
         if (getRepositoryMethodMetadata() == null) {
+            System.out.println("method metadata null!!!!");
             return query;
         }
 
+        System.out.println("method metadata not null!!!!");
         LockModeType type = getRepositoryMethodMetadata().getLockModeType();
         TypedQuery<S> toReturn = type == null ? query : query.setLockMode(type);
         applyQueryHints(toReturn);
@@ -214,6 +216,7 @@ public class JpaSpecificationExecutorWithProjectionImpl<T, ID extends Serializab
         if(queryHints==null){
             queryHints = QueryHints.NoHints.INSTANCE;
         }
+        System.out.println(queryHints);
         queryHints.withFetchGraphs(this.entityManager).forEach(query::setHint);
     }
 
